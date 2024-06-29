@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="styles.css">
+
+
+    <br> 
+    Allotment ID   <!-- will get from db / previous form-->
+    
+    <br>
+    
+    <form action='form3.php' method='POST'>
+    <table>
+        <tr>
+        <h3>
+            <th>
+                Q.  
+            </th>
+            <th>
+                Type         
+            </th>
+            <th>
+                Max Marks   
+            </th>
+            <th>
+                Scored  
+            </th>
+            <th>
+                Status
+            </th>
+        </h3>
+        </tr>
+    
+    
+        <tr>
+            <td>
+                1.
+            </td>
+            <td>
+                <select id = "qType" name="qType">
+                    test
+                    <option value="mcq"> MCQ</option>
+                    <option value="theory">Theory</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" name="total" max="999"> 
+            </td>
+            <td>
+                <input type="number" name="scored" max="999">
+            </td>
+            <td>
+                Attempted
+            </td>
+        </tr>
+    </table> 
+        <input type=hidden name=page value = 3>
+        <input type="submit">
+
+    
+</form>
+
+</html>
